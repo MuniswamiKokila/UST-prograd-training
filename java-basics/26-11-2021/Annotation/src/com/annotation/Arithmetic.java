@@ -3,7 +3,7 @@ package com.annotation;
 interface Addition {
     public int add(int a,int b);
 }
-interface Substraction{
+interface Subtraction{
     public int sub(int a,int b);
 }
 interface Multiplication{
@@ -18,7 +18,7 @@ public class Arithmetic{
             System.out.println("a+b");
             return a+b;
         };
-        Substraction substraction=(a,b) -> {
+        Subtraction subtraction=(a,b) -> {
             System.out.println("a-b");
             return a-b;
         };
@@ -35,7 +35,7 @@ public class Arithmetic{
                 return 0;
         };
         System.out.println(addition.add(10,20));
-        System.out.println(substraction.sub(20,30));
+        System.out.println(subtraction.sub(20,30));
         System.out.println(multiplication.mul(10,5));
         System.out.println(division.div(24,8));
     }
