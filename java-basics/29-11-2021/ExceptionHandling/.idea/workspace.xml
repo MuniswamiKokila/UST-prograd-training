@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36d206a-d7e0-4b1f-853a-785990cacfcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExceptionHandling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exception.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/exceptionpackage/Signup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/exceptionpackage/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/generic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Generic/src/com/Reversing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solution.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/Linked List.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/src/com/list/Linked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExceptionHandling/com/exceptionpackage/Signup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExceptionHandling/com/exceptionpackage/Signup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/exceptionpackage/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exceptionpackage/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,5 +84,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

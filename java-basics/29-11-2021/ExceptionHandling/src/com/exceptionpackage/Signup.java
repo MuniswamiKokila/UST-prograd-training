@@ -34,12 +34,19 @@ public class Signup {
             throw new IllegalPasswordException("Password should be from 8-256 characters");
         }
 
-        if(username.contains(" ") && username.contains("'")){
-            throw new IllegalUsernameException("Username should not contain spaces or paranthesis");
+        if(username.contains(" ")){
+            throw new IllegalUsernameException("Username should not contain spaces");
         }
 
-        if(password.contains(" ") && password.contains("'")){
-            throw new IllegalPasswordException("Password should not contain spaces or paranthesis");
+        if(password.contains(" ")){
+            throw new IllegalPasswordException("Password should not contain spaces");
+        }
+
+        if(username.contains("(") || username.contains(")")){
+            throw new IllegalUsernameException("Username should not contain paranthesis");
+        }
+        if(password.contains("(") || username.contains(")")){
+            throw new IllegalPasswordException("Password should not contain paranthesis");
         }
 
         if(password.contains(username)){
