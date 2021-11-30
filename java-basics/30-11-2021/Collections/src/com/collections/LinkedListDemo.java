@@ -1,8 +1,8 @@
-package com.list;
+package com.collections;
 
 import java.util.LinkedList;
 
-public class Linked {
+public class LinkedListDemo {
     public static void main(String[] args){
         LinkedList<String> linkedlist=new LinkedList<>();
         linkedlist.add("Hi");

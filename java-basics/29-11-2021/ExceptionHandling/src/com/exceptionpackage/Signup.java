@@ -42,10 +42,10 @@ public class Signup {
             throw new IllegalPasswordException("Password should not contain spaces");
         }
 
-        if(username.contains("(") || username.contains(")")){
+        if(username.contains("(") || username.contains(")") || username.contains("{") || username.contains("}")){
             throw new IllegalUsernameException("Username should not contain paranthesis");
         }
-        if(password.contains("(") || username.contains(")")){
+        if(password.contains("(") || username.contains(")") || password.contains("{") || password.contains("}")){
             throw new IllegalPasswordException("Password should not contain paranthesis");
         }
 

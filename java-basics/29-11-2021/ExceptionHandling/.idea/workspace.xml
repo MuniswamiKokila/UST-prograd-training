@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36d206a-d7e0-4b1f-853a-785990cacfcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/Linked List.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../30-11-2021/List/src/com/list/Linked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExceptionHandling/com/exceptionpackage/Signup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExceptionHandling/com/exceptionpackage/Signup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30-11-2021/Collections/src/com/collections/Scores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/exceptionpackage/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/exceptionpackage/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30-11-2021/Collections/out/production/collections/com/collections/Books.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../30-11-2021/Collections/out/production/collections/com/collections/Books.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30-11-2021/Collections/out/production/collections/com/collections/Coin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../30-11-2021/Collections/out/production/collections/com/collections/Coin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30-11-2021/Collections/src/com/collections/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../30-11-2021/Collections/src/com/collections/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../30-11-2021/Collections/src/com/collections/Coin.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../30-11-2021/Collections" />
   </component>
   <component name="RunManager">
     <configuration name="Signup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
