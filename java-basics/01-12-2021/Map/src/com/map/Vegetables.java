@@ -11,6 +11,7 @@ public class Vegetables {
         veggies.put("Tomatoes",60);
         veggies.put("Onions",45);
         veggies.put("Cabbage",40);
+        System.out.println(veggies);
         System.out.println("Enter the veggies to see the cost");
         String veg=sc.next();
         if(veggies.containsKey(veg)){
