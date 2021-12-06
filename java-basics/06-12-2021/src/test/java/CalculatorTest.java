@@ -12,7 +12,7 @@ public class CalculatorTest {
         calc=new Calculator();
     }
     @Nested
-    public class CalculatingAddFunction {
+    public class CalculatingAdditionFunction {
         @BeforeEach
         public void setUp() {
             calc = new Calculator();
@@ -35,14 +35,14 @@ public class CalculatorTest {
         }
     }
     @Nested
-    public class CalculatingSubFunction {
+    public class CalculatingSubtractionFunction {
         @BeforeEach
         public void setUp() {
             calc = new Calculator();
         }
 
         @Test
-        public void SubtractionOfTwentyAndTenGivesTen() {
+        public void subtractionOfTwentyAndTenGivesTen() {
             setUp();
             double result = calc.sub(20, 10);
             double expected = 10;
@@ -50,7 +50,7 @@ public class CalculatorTest {
         }
 
         @Test
-        public void SubtractionOfFiveAndTenGivesMinusFive() {
+        public void subtractionOfFiveAndTenGivesMinusFive() {
             setUp();
             double result = calc.sub(5, 10);
             double expected = -5;
@@ -58,14 +58,14 @@ public class CalculatorTest {
         }
     }
     @Nested
-    public class CalculatingMulFunction {
+    public class CalculatingMultiplicationFunction {
         @BeforeEach
         public void setUp() {
             calc = new Calculator();
         }
 
         @Test
-        public void MulOfTwentyAndTenGivesTwoHundred() {
+        public void MultiplicationOfTwentyAndTenGivesTwoHundred() {
             setUp();
             double result = calc.mul(20, 10);
             double expected = 200;
@@ -73,7 +73,7 @@ public class CalculatorTest {
         }
 
         @Test
-        public void MulOfFiveAndTenGivesFifty() {
+        public void MultiplicationOfFiveAndTenGivesFifty() {
             setUp();
             double result = calc.mul(5, 10);
             double expected = 50;
@@ -81,7 +81,7 @@ public class CalculatorTest {
         }
     }
     @Nested
-    public class CalculatingDivFunction {
+    public class CalculatingDivisionFunction {
         @BeforeEach
         public void setUp() {
             calc = new Calculator();
