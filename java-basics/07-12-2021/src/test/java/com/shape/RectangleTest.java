@@ -1,5 +1,5 @@
-import com.rectangle.Area;
-import com.rectangle.Perimeter;
+package com.shape;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
