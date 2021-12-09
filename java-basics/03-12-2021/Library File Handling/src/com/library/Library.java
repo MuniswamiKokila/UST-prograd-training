@@ -1,67 +1,130 @@
 package com.library;
+import java.io.*;
 
-import java.util.Scanner;
+class Library {
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+    public void addRecords() throws IOException {
 
-public class Library {
+        PrintWriter pw = new PrintWriter(new BufferedWriter(new
+                FileWriter("librarystudents.txt", true)));
+        String name, phone, dname, eid, address, dob;
+        int age;
+        long telephoneNo;
+        String s;
+        boolean addMore = false;
+        // Read Data
+        do {
+            System.out.print("\nEnter student ID: ");
+            eid = br.readLine();
 
-    public static void addbook() {
-        int coun=0;
-        if(coun==9){
-            System.out.println("\n no space \n");
-            return;
+            System.out.print("Enter Name: ");
+            name = br.readLine();
+
+            System.out.print("Department Name: ");
+            dname = br.readLine();
+
+            System.out.print("Address: ");
+            address = br.readLine();
+
+            System.out.print("Phone: ");
+            phone = br.readLine();
+
+            System.out.print("Date of Birth (dd/mm/yy) : ");
+            dob = br.readLine();
+
+            System.out.print("Age: ");
+            age = Integer.parseInt(br.readLine());
+
+            System.out.print("Telephone No.: ");
+            telephoneNo = Long.parseLong(br.readLine());
+            // Print to File
+            pw.println(eid);
+            pw.println(name);
+            pw.println(dname);
+            pw.println(address);
+            pw.println(phone);
+            pw.println(dob);
+            pw.println(age);
+            pw.println(telephoneNo);
+
+            System.out.print("\nRecords added successfully !\n\nDo you want to add more records ? (y/n) : ");
+            s = br.readLine();
+            if (s.equalsIgnoreCase("y")) {
+                addMore = true;
+                System.out.println();
+            } else
+                addMore = false;
         }
-        System.out.println("Add Book Information");
+        while (addMore);
+        pw.close();
+        showMenu();
     }
-    public static void displaybook(){
 
-    }
-    public static void authorbook(){
-
-    }
-    public static void count(){
-
-    }
-    public static void listaccount(){
-
-    }
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int flag = 0;
-        int coun;
-        System.out.println("-------------------------------------------------");
-        System.out.println("          LIBRARY MANAGEMENT SYSTEM              ");
-        System.out.println("-------------------------------------------------");
-        while (true){
-            System.out.println("\n==================================================");
-            System.out.println("press 1 for Add Book Information");
-            System.out.println("Press 2 for Display Book Information");
-            System.out.println("Press 3 for List all books for given author");
-            System.out.println("Press 4 for List the count of books in the Library");
-            System.out.println("Press 5 for List the title of Specified book");
-            System.out.println("Press 6 for Exit");
-            int num=sc.nextInt();
-            switch (num){
-                case 1 : addbook();
-                         break;
-                case 2 : displaybook();
-                         break;
-                case 3 : authorbook();
-                         break;
-                case 4 : count();
-                         break;
-                case 5 : listaccount();
-                         break;
-                case 6 : flag=1;
-                         break;
-                default:
-                    System.out.println("Invaild Entry");
-                    break;
+    public void readRecords() throws IOException {
+        try {
+            // Open the file
+            BufferedReader file = new BufferedReader(new
+                    FileReader("librarystudents.txt"));
+            String name;
+            int i = 1;
+            // Read records from the file
+            while ((name = file.readLine()) != null) {
+                System.out.println("S.No. : " + (i++));
+                System.out.println("-------------");
+                System.out.println("\nstudent ID: " + name);
+                System.out.println("Name : " + file.readLine());
+                System.out.println("Department Name : " + file.readLine());
+                System.out.println("Address: " + file.readLine());
+                System.out.println("Phone: " + file.readLine());
+                System.out.println("Date of Birth : " + file.readLine());
+                System.out.println("Age: " + Integer.parseInt(file.readLine()));
+                System.out.println("Tel. No.: " + Long.parseLong(file.readLine()));
+                System.out.println();
             }
-            if (flag==1){
+            file.close();
+            showMenu();
+        } catch (FileNotFoundException e) {
+            System.out.println("\nERROR : File not Found !!!");
+        }
+    }
+
+    public void clear() throws IOException {
+        // Create a blank file
+        PrintWriter pw = new PrintWriter(new BufferedWriter(new
+                FileWriter("librarystudents.txt")));
+        pw.close();
+        System.out.println("\nAll Records cleared successfully !");
+        for (int i = 0; i < 999999999; i++) ; // Wait for some time
+        showMenu();
+    }
+
+    public void showMenu() throws IOException {
+
+        System.out.print("1 : Add Records\n2 : Display Records\n3 : Clear All Records\n4 : Exit\n\nYour Choice : ");
+        int choice = Integer.parseInt(br.readLine());
+        switch (choice) {
+            case 1:
+                addRecords();
                 break;
-            }
+            case 2:
+                readRecords();
+                break;
+            case 3:
+                clear();
+                break;
+            case 4:
+                System.exit(1);
+                break;
+            default:
+                System.out.println("\nInvalid Choice !");
+                break;
         }
     }
 
+    public static void main(String args[]) throws IOException {
+        Library call = new Library();
+        call.showMenu();
+    }
 }
+

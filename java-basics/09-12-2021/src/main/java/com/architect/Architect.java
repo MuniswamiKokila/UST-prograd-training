@@ -12,28 +12,29 @@ public class Architect {
     public double centimeterToCentimeter(){
         return value;
     }
-    public double centimeterToMeter() {
 
-        return value/100;
-    }
     public double centimeterToKilometer(){
         return value/100000;
     }
     public double meterToCentimeter(){
         return value*100;
     }
-    public double meterToMeter(){
-        return value;
-    }public double meterToKilometer(){
-        return value/1000;
-    }
-    public double kilometerToCentimeter(){
-        return value*100000;
-    }
-    public double kilometerToMeter(){
-        return value*1000;
-    }
-    public double kilometerToKilometer(){
-        return value;
-    }
+
+//    public double centimeterToMeter() { return value/100;  }
+
+//    public double meterToMeter(){
+//        return value;
+//    }
+//    public double meterToKilometer(){
+//        return value/1000;
+//    }
+//    public double kilometerToCentimeter(){
+//        return value*100000;
+//    }
+//    public double kilometerToMeter(){
+//        return value*1000;
+//    }
+//    public double kilometerToKilometer(){
+//        return value;
+//    }
 }
