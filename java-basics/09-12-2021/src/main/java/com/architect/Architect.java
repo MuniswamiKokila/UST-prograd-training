@@ -3,25 +3,65 @@ package com.architect;
 public class Architect {
 
     double value;
-    public Architect(double value){
-        if(value<=0){
+    double anothervalue;
+
+    public Architect(double value) {
+        if (value <= 0) {
             throw new IllegalArgumentException("Length Cannot be less than or equal to zero");
         }
-        this.value=value;
+        this.value = value;
     }
-    public double centimeterToCentimeter(){
+
+    public Architect(double value, double anothervalue) {
+        if (value <= 0) {
+            throw new IllegalArgumentException("Length Cannot be less than or equal to zero");
+        }
+        this.value = value;
+        this.anothervalue = anothervalue;
+    }
+
+    public double centimeterToCentimeter() {
         return value;
     }
 
-    public double centimeterToKilometer(){
-        return value/100000;
+    public double centimeterToKilometer() {
+        return value / 100000;
     }
-    public double meterToCentimeter(){
-        return value*100;
+
+    public double meterToCentimeter() {
+        return value * 100;
     }
+
+    public double additionOfMeterAndCentimetersGivesMeters() {
+
+        return (value + (anothervalue / 100));
+    }
+
+    public double additionOfCentimeterAndKilometerGivesCentimeter() {
+        return (value + (anothervalue * 100000));
+    }
+
+
+    public double subtractionOfMeterAndCentimeterGivesMeter() {
+        return (value - (anothervalue / 100));
+    }
+
+    public double subtractionOfCentimeterAndMeterGivesCentimeter() {
+        return (value - (anothervalue * 100));
+    }
+}
+
+
+
+
+
+
+
+
+
 
 //    public double centimeterToMeter() { return value/100;  }
-
+//
 //    public double meterToMeter(){
 //        return value;
 //    }
@@ -37,4 +77,3 @@ public class Architect {
 //    public double kilometerToKilometer(){
 //        return value;
 //    }
-}

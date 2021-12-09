@@ -5,28 +5,87 @@ import org.junit.jupiter.api.Test;
 
 public class ArchitectTest {
     Architect architect;
-    @Test
-        public void TestOneCentimeterIsEqualToOneCentimeter(){
+    @Nested
+    public class TestSameMeasurements {
+        @Test
+        public void TestOneCentimeterIsEqualToOneCentimeter() {
             architect = new Architect(1);
             double actualValue = architect.centimeterToCentimeter();
-        double expectedValue = 1;
-        Assertions.assertEquals(expectedValue, actualValue);
+            double expectedValue = 1;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+
+        @Test
+        public void TestingOneMeterIsEqualToOneCentimeter() {
+            architect = new Architect(1);
+            double actualValue = architect.meterToCentimeter();
+            double expectedValue = 100;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+
+        @Test
+        public void TestingOneHundredCmIsEqualToZeroPointZeroZeroOneKilometers() {
+            architect = new Architect(100);
+            double actualValue = architect.centimeterToKilometer();
+            double expectedValue = 0.001;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
     }
-    @Test
-            public void TestingOneMeterIsEqualToOneCentimeter() {
-                architect = new Architect(1);
-                double actualValue = architect.meterToCentimeter();
-                double expectedValue = 100;
-                Assertions.assertEquals(expectedValue, actualValue);
-            }
-    @Test
-            public void TestingOneHundredCmIsEqualToZeroPointZeroZeroOneKilometers() {
-                architect = new Architect(100);
-                double actualValue = architect.centimeterToKilometer();
-                double expectedValue = 0.001;
-                Assertions.assertEquals(expectedValue, actualValue);
-            }
+    @Nested
+    public class AddingMeasurements{
+        @Test
+        public void additionOfOneMeterAndOneHundredCentimetersIsTwoMeters(){
+            architect = new Architect(1,100);
+            double actualValue = architect.additionOfMeterAndCentimetersGivesMeters();
+            double expectedValue = 2;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+        @Test
+        public void additionOfTwoHundredCentimeterAndOneKilometerIsOneLakhTwoHundredCentimeter(){
+            architect = new Architect(200,1);
+            double actualValue = architect.additionOfCentimeterAndKilometerGivesCentimeter();
+            double expectedValue = 100200;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+    }
+    @Nested
+    public class SubtractingMeasurements{
+        @Test
+        public void subtractionOfOneMeterAndFiftyCentimetersIsZeroPointFiveMeters(){
+            architect = new Architect(1,50);
+            double actualValue = architect.subtractionOfMeterAndCentimeterGivesMeter();
+            double expectedValue = 0.5;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+        @Test
+        public void additionOfTwoThousandCentimeterAndOneMeterIsNineteenHundredCentimeter(){
+            architect = new Architect(2000,1);
+            double actualValue = architect.subtractionOfCentimeterAndMeterGivesCentimeter();
+            double expectedValue = 1900;
+            Assertions.assertEquals(expectedValue, actualValue);
+        }
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // For All Test Cases
