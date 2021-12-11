@@ -1,71 +1,77 @@
-import com.architect.Architect;
+import com.architect.LengthConvertor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class ArchitectTest {
-    Architect architect;
+public class MeasurementsConvertorTest {
+    LengthConvertor architect;
     @Nested
-    public class TestSameMeasurements {
-        @Test
-        public void TestOneCentimeterIsEqualToOneCentimeter() {
-            architect = new Architect(1);
-            double actualValue = architect.centimeterToCentimeter();
-            double expectedValue = 1;
-            Assertions.assertEquals(expectedValue, actualValue);
+    public class TestLengthMeasurements {
+        @Nested
+        public class TestDifferentLengths {
+            @Test
+            public void TestingOneCentimeterIsEqualToOneCentimeter() {
+                architect = new LengthConvertor(1);
+                double actualValue = architect.centimeterToCentimeter();
+                double expectedValue = 1;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
+
+            @Test
+            public void TestingOneMeterIsEqualToOneCentimeter() {
+                architect = new LengthConvertor(1);
+                double actualValue = architect.meterToCentimeter();
+                double expectedValue = 100;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
+
+            @Test
+            public void TestingOneHundredCmIsEqualToZeroPointZeroZeroOneKilometers() {
+                architect = new LengthConvertor(100);
+                double actualValue = architect.centimeterToKilometer();
+                double expectedValue = 0.001;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
         }
 
-        @Test
-        public void TestingOneMeterIsEqualToOneCentimeter() {
-            architect = new Architect(1);
-            double actualValue = architect.meterToCentimeter();
-            double expectedValue = 100;
-            Assertions.assertEquals(expectedValue, actualValue);
+        @Nested
+        public class AddingLengths {
+            @Test
+            public void checkAdditionOfOneMeterAndOneHundredCentimetersIsTwoMeters() {
+                architect = new LengthConvertor(100);
+                double actualValue = 1 + architect.centimeterToMeter();
+                double expectedValue = 2;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
+
+            @Test
+            public void checkAdditionOfTwoHundredCentimeterAndOneKilometerIsOneLakhTwoHundredCentimeter() {
+                architect = new LengthConvertor(1);
+                double actualValue = 200 + architect.kilometerToCentimeter();
+                double expectedValue = 100200;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
         }
 
-        @Test
-        public void TestingOneHundredCmIsEqualToZeroPointZeroZeroOneKilometers() {
-            architect = new Architect(100);
-            double actualValue = architect.centimeterToKilometer();
-            double expectedValue = 0.001;
-            Assertions.assertEquals(expectedValue, actualValue);
-        }
-    }
-    @Nested
-    public class AddingMeasurements{
-        @Test
-        public void additionOfOneMeterAndOneHundredCentimetersIsTwoMeters(){
-            architect = new Architect(1,100);
-            double actualValue = architect.additionOfMeterAndCentimetersGivesMeters();
-            double expectedValue = 2;
-            Assertions.assertEquals(expectedValue, actualValue);
-        }
-        @Test
-        public void additionOfTwoHundredCentimeterAndOneKilometerIsOneLakhTwoHundredCentimeter(){
-            architect = new Architect(200,1);
-            double actualValue = architect.additionOfCentimeterAndKilometerGivesCentimeter();
-            double expectedValue = 100200;
-            Assertions.assertEquals(expectedValue, actualValue);
-        }
-    }
-    @Nested
-    public class SubtractingMeasurements{
-        @Test
-        public void subtractionOfOneMeterAndFiftyCentimetersIsZeroPointFiveMeters(){
-            architect = new Architect(1,50);
-            double actualValue = architect.subtractionOfMeterAndCentimeterGivesMeter();
-            double expectedValue = 0.5;
-            Assertions.assertEquals(expectedValue, actualValue);
-        }
-        @Test
-        public void additionOfTwoThousandCentimeterAndOneMeterIsNineteenHundredCentimeter(){
-            architect = new Architect(2000,1);
-            double actualValue = architect.subtractionOfCentimeterAndMeterGivesCentimeter();
-            double expectedValue = 1900;
-            Assertions.assertEquals(expectedValue, actualValue);
-        }
-    }
+        @Nested
+        public class SubtractingLengths {
+            @Test
+            public void checkSubtractionOfOneMeterAndFiftyCentimetersIsZeroPointFiveMeters() {
+                architect = new LengthConvertor(50);
+                double actualValue = 1 - architect.centimeterToMeter();
+                double expectedValue = 0.5;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
 
+            @Test
+            public void checkSubtractionOfTwoThousandCentimeterAndOneMeterIsNineteenHundredCentimeter() {
+                architect = new LengthConvertor(1);
+                double actualValue = 2000 - architect.meterToCentimeter();
+                double expectedValue = 1900;
+                Assertions.assertEquals(expectedValue, actualValue);
+            }
+        }
+    }
 }
 
 
