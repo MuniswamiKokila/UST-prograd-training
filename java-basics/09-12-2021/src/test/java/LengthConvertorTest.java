@@ -1,34 +1,31 @@
-import com.architect.LengthConvertor;
+import com.architect.MeasurementConvertor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-public class MeasurementsConvertorTest {
-    LengthConvertor architect;
+public class LengthConvertorTest {
+    MeasurementConvertor measurementConvertor = new MeasurementConvertor();
     @Nested
     public class TestLengthMeasurements {
         @Nested
         public class TestDifferentLengths {
             @Test
             public void TestingOneCentimeterIsEqualToOneCentimeter() {
-                architect = new LengthConvertor(1);
-                double actualValue = architect.centimeterToCentimeter();
+                double actualValue = measurementConvertor.centiToCenti(1);
                 double expectedValue = 1;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
 
             @Test
             public void TestingOneMeterIsEqualToOneCentimeter() {
-                architect = new LengthConvertor(1);
-                double actualValue = architect.meterToCentimeter();
+                double actualValue = measurementConvertor.baseToCenti(1);
                 double expectedValue = 100;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
 
             @Test
             public void TestingOneHundredCmIsEqualToZeroPointZeroZeroOneKilometers() {
-                architect = new LengthConvertor(100);
-                double actualValue = architect.centimeterToKilometer();
+                double actualValue = measurementConvertor.centiToKilo(100);
                 double expectedValue = 0.001;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
@@ -38,16 +35,14 @@ public class MeasurementsConvertorTest {
         public class AddingLengths {
             @Test
             public void checkAdditionOfOneMeterAndOneHundredCentimetersIsTwoMeters() {
-                architect = new LengthConvertor(100);
-                double actualValue = 1 + architect.centimeterToMeter();
+                double actualValue = 1 + measurementConvertor.centiToBase(100);
                 double expectedValue = 2;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
 
             @Test
             public void checkAdditionOfTwoHundredCentimeterAndOneKilometerIsOneLakhTwoHundredCentimeter() {
-                architect = new LengthConvertor(1);
-                double actualValue = 200 + architect.kilometerToCentimeter();
+                double actualValue = 200 + measurementConvertor.kiloToCenti(1);
                 double expectedValue = 100200;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
@@ -57,16 +52,14 @@ public class MeasurementsConvertorTest {
         public class SubtractingLengths {
             @Test
             public void checkSubtractionOfOneMeterAndFiftyCentimetersIsZeroPointFiveMeters() {
-                architect = new LengthConvertor(50);
-                double actualValue = 1 - architect.centimeterToMeter();
+                double actualValue = 1 - measurementConvertor.centiToBase(50);
                 double expectedValue = 0.5;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
 
             @Test
             public void checkSubtractionOfTwoThousandCentimeterAndOneMeterIsNineteenHundredCentimeter() {
-                architect = new LengthConvertor(1);
-                double actualValue = 2000 - architect.meterToCentimeter();
+                double actualValue = 2000 - measurementConvertor.baseToCenti(1);
                 double expectedValue = 1900;
                 Assertions.assertEquals(expectedValue, actualValue);
             }
