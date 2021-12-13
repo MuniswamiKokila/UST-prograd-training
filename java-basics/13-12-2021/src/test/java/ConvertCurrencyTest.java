@@ -18,10 +18,18 @@ class ConvertCurrencyTest {
     @Nested
     class AddingAmount{
         @Test
-        public void addingMoneyToWallet(){
-            double actualCurrency=convertCurrency.addMoney(100);
+        public void addingOneHundredRupeesMoneyToWallet(){
+            double actualCurrency=convertCurrency.addMoney(100,"rupees");
             double expectedCurrency=actualCurrency;
             assertEquals(expectedCurrency,actualCurrency);
+        }
+        @Test
+        public void addNegativeValueInputOfMoneyToWallet(){
+            assertThrows(Exception.class,()->convertCurrency.addMoney(-10,"rupees"));
+        }
+        @Test
+        public void addWonCurrencyMoneyToWallet(){
+            assertThrows(Exception.class,()->convertCurrency.addMoney(100,"won"));
         }
     }
     @Nested
@@ -44,9 +52,13 @@ class ConvertCurrencyTest {
     class RetrievingAmount{
         @Test
         public void retrieveTheMoneyFromWallet(){
-            double actualCurrency=convertCurrency.retrieveMoney(1);
-            double expectedCurrency=1;
+            double actualCurrency=convertCurrency.retrieveMoney(1.0,"dollars");
+            double expectedCurrency=1.0;
             assertEquals(expectedCurrency,actualCurrency);
+        }
+        @Test
+        public void retrieveTheMoney(){
+            assertThrows(Exception.class,()-> convertCurrency.retrieveMoney(2,"dollar"));
         }
     }
 
