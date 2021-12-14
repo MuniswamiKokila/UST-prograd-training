@@ -9,7 +9,7 @@ public class ConvertCurrency {
 
     public double addMoney(double Money,String Currency) {
         if (Money<=0 || !"rupees".equals(Currency) && !"dollars".equals(Currency)){
-            throw new IllegalArgumentException("Invalid Input");
+            throw new IllegalArgumentException("Invalid Currency or Money");
         }
         double wallet=0;
         if(Currency.equals("rupees")) {
@@ -30,9 +30,9 @@ public class ConvertCurrency {
     }
     public double retrieveMoney(double Amount, String Currency){
         double amountInRupees=74.85, amountInDollar=1, otherAmountInRupees= 149.7;
-        double retrieveMoney=0;
+        double retrieveMoney;
         if(Amount==amountInRupees && Currency.equals("rupees") || Amount==amountInDollar && Currency.equals("dollars") || Amount==otherAmountInRupees && Currency.equals("rupees")) {
-            retrieveMoney=Amount;
+            retrieveMoney=Math.round(Amount * 100) / 100;
         }
         else {
             throw new IllegalArgumentException("This is not the specified amount");
