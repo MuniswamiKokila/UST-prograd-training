@@ -1,0 +1,8 @@
+Dec 15, 2021 12:56:44 PM ConvertCurrency main
+INFO: Program Started.......
+Dec 15, 2021 12:57:07 PM ConvertCurrency main
+INFO: User wanted to convert INR to USD
+Dec 15, 2021 12:57:10 PM ConvertCurrency main
+INFO: User Entered Amount of: 74.85
+Dec 15, 2021 12:57:10 PM ConvertCurrency main
+INFO: Program Stopped...
