@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a0eab4c-6d99-44cd-bb36-4201e2a76277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoteKeeper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NoteKeeper/NoteKeeper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/NoteKeeperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/NoteKeeper/NoteKeeper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../14-12-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../14-12-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/java/com/example/HelloUST/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/java/com/example/HelloUST/HelloUstApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/test/java/com/example/HelloUST/HelloUstApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-12-2021/Library File Handling/out/production/Library/com/library/LibraryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-12-2021/Library File Handling/out/production/Library/com/library/LibraryManagement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConvertCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/converter/ConvertCurrency.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +62,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\IdeaProjects\UST_training\java-basics\15-12-2021\src\com\converter" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
