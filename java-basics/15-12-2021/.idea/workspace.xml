@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a0eab4c-6d99-44cd-bb36-4201e2a76277" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/java/com/example/HelloUST/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/java/com/example/HelloUST/HelloUstApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20-12-2021/HelloUST/src/test/java/com/example/HelloUST/HelloUstApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-12-2021/Library File Handling/out/production/Library/com/library/LibraryManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03-12-2021/Library File Handling/out/production/Library/com/library/LibraryManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConvertCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/converter/ConvertCurrency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../22-12-2021/Banking/src/main/java/com/example/Banking/BankingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../22-12-2021/Banking/src/main/java/com/example/Banking/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/converter/ConvertCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Hackathon/ConvertCurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/converter/CurrencyConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Hackathon/CurrencyConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
