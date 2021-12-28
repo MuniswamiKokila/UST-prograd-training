@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Details</title>
+</head>
+<body>
+<h3>Customer Name:  <span th:text="${customerName}"></span></h3>
+<h3>Account Number:  <span th:text="${accountNumber}"></span></h3>
+<h3>Balance:  <span th:text="${mobileNumber}"></span></h3>
+<h3>Balance:  <span th:text="${branch}"></span></h3>
+<h3>Balance:  <span th:text="${balance}"></span></h3>
+<form action="/login">
+    <input type="submit" value="Logout"><br><br>
+</form>
+</body>
+</html>
