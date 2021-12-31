@@ -1,6 +1,6 @@
-package com.banking.Bank;
+package com.banking.Bank.entity;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.banking.Bank.entity.Customer;
 import org.springframework.stereotype.Component;
 
 @Component

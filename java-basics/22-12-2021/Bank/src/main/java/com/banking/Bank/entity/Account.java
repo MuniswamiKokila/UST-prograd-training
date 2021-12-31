@@ -1,10 +1,10 @@
-package com.banking.Bank;
+package com.banking.Bank.entity;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class Account {
-    public void amountDepositOrWithdrawal(Customer customer,double amount, String withdrawalOrDeposit){
+    public void amountDepositOrWithdrawal(Customer customer, double amount, String withdrawalOrDeposit){
         if (withdrawalOrDeposit.contains("deposit")){
             customer.accountBalance=customer.accountBalance+amount;
             customer.displayCustomerAccountDetails();

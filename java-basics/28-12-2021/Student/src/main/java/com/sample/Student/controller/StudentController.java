@@ -3,6 +3,7 @@ package com.sample.Student.controller;
 import com.sample.Student.entity.Students;
 import com.sample.Student.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public class StudentController {
     @Autowired
     private StudentService service;
-    @RequestMapping("/create")
+    @PostMapping("/create")
     public Students create(HttpServletRequest request){
         String name=request.getParameter("name");
         String phone=request.getParameter("phone");

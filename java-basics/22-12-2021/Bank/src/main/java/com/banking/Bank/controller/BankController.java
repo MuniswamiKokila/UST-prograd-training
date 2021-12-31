@@ -1,8 +1,14 @@
-package com.banking.Bank;
+package com.banking.Bank.controller;
 
+import com.banking.Bank.entity.Customer;
+import com.banking.Bank.service.BankService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
@@ -10,6 +16,7 @@ import java.util.*;
 
 @Controller
 public class BankController {
+
     @RequestMapping("/")
     public String home(){
         return "home";
@@ -19,9 +26,7 @@ public class BankController {
         return "login";
     }
     @RequestMapping("/register")
-    public String register(){
-        return "register";
-    }
+    public String register(){return "register";}
     @RequestMapping("/Details")
     public String showDetails(Model model, HttpServletRequest request){
         Map<String, ArrayList<String>> accountMap=new HashMap<>();
@@ -34,7 +39,7 @@ public class BankController {
         ArrayList<String> details1=new ArrayList<>(List.of("123456","265487144996","Kokila","9525454511","Tekkali","2000"));
         accountMap.put("Kokila",details1);
         ArrayList<String> details2=new ArrayList<>(List.of("123456","246157889156","Deepika","9745165817","Visakhapatnam","1500"));
-        accountMap.put("Deepika",details1);
+        accountMap.put("Deepika",details2);
 
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
@@ -72,4 +77,5 @@ public class BankController {
         }
         return "details";
     }
+
 }
