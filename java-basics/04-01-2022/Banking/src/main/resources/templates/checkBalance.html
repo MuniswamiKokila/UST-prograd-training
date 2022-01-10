@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>check Balance</title>
+    <style>
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navigation a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgrey;
+  color:black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+  color:black;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}</style>
+</head>
+<body style="background-color:powderblue;">
+<div class="navigation">
+    <a href="/checkBalance">Check Balance</a>
+    <a href="/fundTransfer">Fund Transfer</a>
+    <div class="dropdown" style="float:right;padding-right:50px">
+        <button class="dropbtn"><span th:text="${customerName}"></span></button>
+        <div class="dropdown-content" >
+            <a th:href="@{/updateDetails/{id} (id=${useName})}">Update Details</a>
+            <a th:href="@{/deposit/{id} (id=${userName})}">Deposit</a>
+            <a th:href="@{/accountDetails/{id} (id=${userName})}">Account Details</a>
+        </div>
+    </div>
+</div>
+
+<h6 style="font-size:20px;color:green;text-align:center"><small><span th:text="${message}"></span></small></h6>
+<h4 align="center"><span th:text="${name}"></span></h4>
+<p style="font-size:20px;text-align:center">Balance : <small>₹<span th:text="${balance}"></span></small></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Details</title>
+</head>
+<body style="background-color:powderblue;">
+
+<center>
+    <h1>Update Details</h1><br/>
+<form action="/details" method="post">
+    <label><b>Enter Username</b></label><br>
+    <input type="text" placeholder="Enter Username" name="userName" th:value="${customer.userName}"><br><br>
+    <label><b>Enter Name</b></label><br>
+    <input type="text" placeholder="Enter Name" name="customerName" th:value="${customer.customerName}"><br><br>
+    <label><b>Email :</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" th:value="${customer.email}"><br><br>
+    <label><b>Mobile Number:</b></label><br>
+    <input type="number" placeholder="Enter Mobile Number" name="mobileNumber" th:value="${customer.mobileNumber}"><br><br>
+    <label><b>Enter Address</b></label><br>
+    <input type="text" placeholder="Enter Address" name="address" th:value="${customer.address}"><br><br>
+    <label><b>Enter Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="password" th:value="${customer.password}"><br><br>
+    <input type="submit" value="Update">&nbsp;
+    <button type="button" class="cancelButton" onclick="/">Cancel</button><br/><br/>
+</form>
+</center>
+</body>
+</html>
