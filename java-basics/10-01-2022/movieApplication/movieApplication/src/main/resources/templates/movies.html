@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+    <style>
+    .navigation {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.navigation a.active {
+  background-color: green;
+  color: white;
+}
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+ background-color: darkgrey;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}     table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+ background-color: darkgrey;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button{
+color:green;
+}
+    </style>
+</head>
+<body style="background-color:powderblue;">
+<!--<h1>Movies List</h1>-->
+<!--<span th:text="${message}"/>-->
+<div class="navigation">
+    <a href="/">Home</a>
+    <a th:href="@{/{userName}/myBookings (userName=${userName})}">My Bookings</a>
+    <a class="active" href="#" style="float:right" th:text="${userName}"></a>
+    <a href="/">Logout</a>
+</div>
+<div class="container">
+    <div class="row">
+        <h2>Movies</h2>
+    </div>
+<table>
+    <thead>
+    <tr>
+        <th>MovieName</th>
+        <th>Released Date</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="movie: ${movies}">
+        <td th:text="${movie.movieName}"></td>
+        <td th:text="${movie.releaseDate}"></td>
+
+        <td>
+           <button> <a class="btn btn-success" th:href="@{/{userName}/movie/{id} (userName=${userName},id=${movie.movieId})}">Book Tickets</a> </button>
+        </td>
+    </tr>
+    </tbody>
+
+</table>
+
+</body>
+</html>
